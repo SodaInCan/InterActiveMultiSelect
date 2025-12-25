@@ -1,7 +1,7 @@
 {
   "name": "interactive-multiselect",
   "version": "1.0.0",
-  "description": "A lightweight, customizable jQuery multi-select dropdown plugin with checkbox/radio support, search, and Bootstrap compatibility.",
+  "description": "A lightweight jQuery multiselect dropdown plugin with checkboxes, radio buttons, option groups, search, and Bootstrap modal support.",
   "main": "js/InterActiveMultiSelect.js",
   "keywords": [
     "jquery",
