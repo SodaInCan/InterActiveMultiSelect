@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterActiveMultiSelect - jQuery Plugin Demo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link href="css/InterActiveMultiSelect.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="mb-4">InterActiveMultiSelect Plugin Demo</h1>
+    <p class="text-muted">A jQuery multi-select plugin compatible with all frameworks including ASP.NET MVC, Bootstrap modals, and more.</p>
+
+    <div class="row g-4">
+      <!-- Checkbox Mode Example -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Checkbox Mode (Multiple Selection)</div>
+          <div class="card-body">
+            <label class="form-label">Select Fruits</label>
+            <select id="fruits" name="SelectedFruits" multiple class="form-select">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="cherry">Cherry</option>
+              <option value="date">Date</option>
+              <option value="elderberry">Elderberry</option>
+              <option value="fig">Fig</option>
+              <option value="grape">Grape</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Radio Mode Example -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Radio Mode (Single Selection)</div>
+          <div class="card-body">
+            <label class="form-label">Select Country</label>
+            <select id="country" name="SelectedCountry" class="form-select">
+              <option value="">-- Choose --</option>
+              <option value="pk">Pakistan</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="au">Australia</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Example -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">With Search Option</div>
+          <div class="card-body">
+            <label class="form-label">Select Employees</label>
+            <select id="employeesSearch" name="EmployeeIds" multiple class="form-select">
+              <option value="1">Ahmed Khan</option>
+              <option value="2">Sara Ali</option>
+              <option value="3">Muhammad Usman</option>
+              <option value="4">Fatima Noor</option>
+              <option value="5">Ali Hassan</option>
+              <option value="6">Ayesha Malik</option>
+              <option value="7">Bilal Ahmed</option>
+              <option value="8">Zainab Fatima</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Radio with Search</div>
+          <div class="card-body">
+            <label class="form-label">Select City</label>
+            <select id="citySearch" name="City" class="form-select">
+              <option value="">-- Choose City --</option>
+              <option value="khi">Karachi</option>
+              <option value="lhr">Lahore</option>
+              <option value="isl">Islamabad</option>
+              <option value="psh">Peshawar</option>
+              <option value="qta">Quetta</option>
+              <option value="mlt">Multan</option>
+              <option value="fsd">Faisalabad</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Modal Example -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Bootstrap Modal Compatibility</div>
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
+              Open Modal with MultiSelect
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Optgroup Example -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">With Option Groups</div>
+          <div class="card-body">
+            <label class="form-label">Select Skills</label>
+            <select id="skills" name="SkillIds" multiple class="form-select">
+              <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="react">React</option>
+                <option value="vue">Vue.js</option>
+              </optgroup>
+              <optgroup label="Backend">
+                <option value="csharp">C#</option>
+                <option value="python">Python</option>
+                <option value="node">Node.js</option>
+                <option value="php">PHP</option>
+              </optgroup>
+              <optgroup label="Database">
+                <option value="sql">SQL Server</option>
+                <option value="mysql">MySQL</option>
+                <option value="mongo">MongoDB</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASP.NET MVC Form Example -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">ASP.NET MVC Form Example (with Search)</div>
+          <div class="card-body">
+            <form id="demoForm" method="post" action="/Controller/Action">
+              <div class="mb-3">
+                <label class="form-label">Select Categories</label>
+                <select id="categories" name="CategoryIds" multiple class="form-select">
+                  <option value="1">Electronics</option>
+                  <option value="2">Clothing</option>
+                  <option value="3">Books</option>
+                  <option value="4">Home & Garden</option>
+                  <option value="5">Sports</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success">Submit Form</button>
+              <button type="button" class="btn btn-secondary ms-2" id="showValues">Show Selected Values</button>
+            </form>
+            <pre id="valuesOutput" class="mt-3 p-2 bg-light" style="display:none;"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Theme Example -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Custom Theme (Dark)</div>
+          <div class="card-body bg-dark text-white">
+            <label class="form-label">Select Colors</label>
+            <select id="colors" name="Colors" multiple class="form-select ias-dark">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">With Disabled Options</div>
+          <div class="card-body">
+            <label class="form-label">Select Status</label>
+            <select id="status" name="Status" multiple class="form-select">
+              <option value="active">Active</option>
+              <option value="pending">Pending</option>
+              <option value="disabled" disabled>Disabled (not selectable)</option>
+              <option value="archived">Archived</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="demoModalLabel">MultiSelect in Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label class="form-label">Select Employees</label>
+          <select id="employees" name="EmployeeIds" multiple class="form-select">
+            <option value="1">Ahmed Khan</option>
+            <option value="2">Sara Ali</option>
+            <option value="3">Muhammad Usman</option>
+            <option value="4">Fatima Noor</option>
+            <option value="5">Ali Hassan</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JS -->
+  <script src="js/InterActiveMultiSelect.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // Checkbox mode (default)
+      $('#fruits').interActiveMultiSelect({
+        placeholder: 'Select Fruits'
+      });
+
+      // Radio mode
+      $('#country').interActiveMultiSelect({
+        mode: 'radio',
+        placeholder: 'Select Country'
+      });
+
+      // With Search - Checkbox
+      $('#employeesSearch').interActiveMultiSelect({
+        placeholder: 'Select Employees',
+        search: true,
+        searchPlaceholder: 'Search employees...'
+      });
+
+      // With Search - Radio
+      $('#citySearch').interActiveMultiSelect({
+        mode: 'radio',
+        placeholder: 'Select City',
+        search: true,
+        searchPlaceholder: 'Search city...'
+      });
+
+      // Categories (for ASP.NET MVC form) with search
+      $('#categories').interActiveMultiSelect({
+        placeholder: 'Select Categories',
+        search: true
+      });
+
+      // With optgroup (groups)
+      $('#skills').interActiveMultiSelect({
+        placeholder: 'Select Skills',
+        search: true,
+        searchPlaceholder: 'Search skills...'
+      });
+
+      // Dark theme
+      $('#colors').interActiveMultiSelect({
+        placeholder: 'Select Colors'
+      });
+
+      // With disabled options
+      $('#status').interActiveMultiSelect({
+        placeholder: 'Select Status'
+      });
+
+      // Modal - initialize when modal opens
+      $('#demoModal').on('shown.bs.modal', function(){
+        if (!$('#employees').data('ias-init')){
+          $('#employees').interActiveMultiSelect({
+            placeholder: 'Select Employees',
+            search: true
+          }).data('ias-init', true);
+        }
+      });
+
+      // Show selected values
+      $('#showValues').on('click', function(){
+        var vals = $('#categories').val();
+        $('#valuesOutput').show().text('Selected Values: ' + JSON.stringify(vals));
+      });
+    });
+  </script>
+</body>
+</html>
