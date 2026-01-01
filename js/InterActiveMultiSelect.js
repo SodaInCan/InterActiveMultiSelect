@@ -1,4 +1,4 @@
-/* InterActiveMultiSelect jQuery Plugin v1.0.0
+/* InterActiveMultiSelect jQuery Plugin v1.0.1
    - Dropdown-only multi-select
    - Checkbox or radio mode
    - Select All / Clear links
@@ -73,6 +73,14 @@
       $searchInput.on('input', function(){
         var query = $(this).val().toLowerCase().trim();
         var visibleCount = 0;
+        
+        // When search is cleared, show all items and headers immediately
+        if (query === '') {
+          $list.find('.ias-item').show();
+          $list.find('.ias-group-header').show();
+          $noResults.hide();
+          return;
+        }
         
         $list.find('.ias-item').each(function(){
           var $item = $(this);
@@ -257,7 +265,7 @@
     // Select All handler
     $selectAll.on('click', function(e){
       e.preventDefault();
-      $list.find('.ias-item:not(.disabled)').each(function(){
+      $list.find('.ias-item:visible:not(.disabled)').each(function(){
         var $item = $(this);
         var $input = $item.find('input');
         $input.prop('checked', true);
@@ -272,7 +280,7 @@
     // Clear handler
     $clear.on('click', function(e){
       e.preventDefault();
-      $list.find('.ias-item:not(.disabled)').each(function(){
+      $list.find('.ias-item:visible:not(.disabled)').each(function(){
         var $item = $(this);
         var $input = $item.find('input');
         $input.prop('checked', false);

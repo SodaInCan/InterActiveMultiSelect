@@ -254,6 +254,15 @@ Your modal CSS probably has `overflow: hidden`. Fix:
 
 Chrome, Firefox, Safari, Edge. Should work in IE11 too but I haven't tested much.
 
+## Changelog
+
+### v1.0.1
+- **Fixed:** Group headers now properly show/hide when using search with option groups
+- **Fixed:** "Select All" and "Clear" buttons now only affect visible (filtered) items when search is active
+
+### v1.0.0
+- Initial release
+
 ## License
 
 MIT - do whatever you want with it.
